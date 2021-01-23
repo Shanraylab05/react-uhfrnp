@@ -1,13 +1,16 @@
 import React from "react";
 import "./style.css";
 
+import Skills from "./Skills";
+
+
 export default function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-      <FirstComponent></FirstComponent>
-      <Second></Second>
+      <h1>Hello StackBlitz!</h1>    
+      <FirstComponent>        
+      </FirstComponent>
+    
       
     </div>
   );
@@ -18,6 +21,7 @@ class FirstComponent extends React.Component {
     return (
       <div className="App">
         <h1>Murali</h1>
+         <Skills empskill="React Js and Dotnet"></Skills>
       </div>
     );
   }
@@ -26,5 +30,7 @@ class FirstComponent extends React.Component {
 function Second(){
   return(
      <h1>function based Component</h1>
+      
+    
   )
 }
